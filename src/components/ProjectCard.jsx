@@ -1,12 +1,57 @@
 import React from "react";
+import "./ProjectCard.css";
 
-function ProjectCard({ title, description, link , image}) {
+function ProjectCard({ title, brief_summary, languages, tools, description, link }) {
   return (
     <div className="project-card">
-      <h3>{title}</h3>
-      <p>{description}</p>
-      <img src={image} alt="Image"/>
-      <a href={link} target="_blank" rel="noreferrer">Ver proyecto</a>
+      <h2>{title}</h2>
+      <p className="brief-summary">{brief_summary}</p>
+      <div className="languages">
+        <h4>Programming Languages: &nbsp;</h4>
+        {languages.map((lang, index, array)=>
+          {
+            if (array.length-1=== index){
+            return(<span key={index} className="language-tag">
+              {lang+" "}
+            </span>)
+            } else {
+              return (<span key={index} className="language-tag">
+                {lang+", "}
+                &nbsp;
+              </span>
+              )
+            }
+            
+          })}
+      </div>
+      <div className="tools">
+        <h4>Tools used: &nbsp;</h4>
+        {tools.map((tool, index, array)=>
+          {
+            if (array.length-1=== index){
+            return(<span key={index} className="tool-tag">
+              {tool+" "}
+            </span>)
+            } else {
+              return (<span key={index} className="tool-tag">
+                {tool+", "}
+                &nbsp;
+              </span>)
+            }
+            
+          })}
+      </div>
+      <div className="description">
+        {description.map((desc, index) => (
+          <div key={index} className="text-image">
+            <p >{desc.text}</p>
+            {desc.image && <img src={desc.image} alt="project"/>}
+          </div>
+        ))}
+      </div>
+      <br/>
+      <br/>
+      <a href={link.link} target="_blank" rel="noreferrer"><span>{link.text}</span></a>
     </div>
   );
 }
