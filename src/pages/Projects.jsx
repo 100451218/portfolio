@@ -3,13 +3,15 @@ import ProjectCard from "../components/ProjectCard";
 
 const projects = [
   {
-    title: "Survival VR Game",
+    title: "Survival VR Game Android",
     description: "Videojuego en Unity con inteligencia artificial.",
+    image: "./placeholder1.png",
     link: "https://github.com/tu-repo",
   },
   {
     title: "Web Tracking App",
     description: "Aplicación web para medir pasos y actividad del usuario.",
+    image: "./placeholder1.png",
     link: "https://github.com/tu-repo",
   },
 ];
