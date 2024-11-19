@@ -11,6 +11,8 @@ function Header (){
                 <ul className="nav-links">
                     <li><Link to="/">Inicio</Link></li>
                     <li><Link to="/about">About</Link></li>
+                    <li><Link to="/projects">Proyectos</Link></li>
+                    <li><Link to="/contact">Contacto</Link></li>
                 </ul>
             </nav>
         </header>
