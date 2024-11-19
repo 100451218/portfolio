@@ -12,6 +12,7 @@
     font-weight: 200;
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .tools{
@@ -19,6 +20,7 @@
     font-weight: 200;
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .text-image{
@@ -28,9 +30,12 @@
 }
 
 .text-image img{
-    height: 50vh;
+    height: auto;
     width: auto;
     align-self: center;
+    max-width: 100%;
+    max-height: 50vh;
+    display: block;
 }
 
 

@@ -8,27 +8,45 @@
     padding: 1rem;
 }
 
-.social-links{
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-links{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 1rem;
 }
 
-.social-links a{
+.contact-links a{
     color: #fff;
     text-decoration: none;
     transition: color 0.3s;
 }
-.social-links a:hover{
+.contact-links a:hover{
     color: #00bcd4;
 }
 
-
-#Phone{
-    right: 10px;
-    position: absolute;
+.contact-info{
+    margin: 0;
 }
 
-#Phone p {
-    margin: 0;
+.contact-info p{
+    align-self: center;
+}
+
+@media (max-width: 600px){
+    .social-links{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #Email{
+        white-space: nowrap;
+    }
 }
