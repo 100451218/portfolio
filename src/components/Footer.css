@@ -1,0 +1,20 @@
+.footer{
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+.social-links{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.social-links a:hover{
+    color: #00bcd4;
+}
