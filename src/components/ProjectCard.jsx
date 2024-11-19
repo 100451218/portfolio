@@ -43,15 +43,15 @@ function ProjectCard({ title, brief_summary, languages, tools, description, link
       </div>
       <div className="description">
         {description.map((desc, index) => (
-          <div key={index} className="text-image">
+          <div  key={index} className="text-image">
             <p >{desc.text}</p>
-            {desc.image && <img src={desc.image} alt="project"/>}
+            {desc.image && <img id={"image"+desc.image} src={desc.image} alt="project"/>}
           </div>
         ))}
       </div>
       <br/>
       <br/>
-      <a href={link.link} target="_blank" rel="noreferrer"><span>{link.text}</span></a>
+      {link && <a href={link.link} target="_blank" rel="noreferrer"><span>{link.text}</span></a>}
     </div>
   );
 }

@@ -9,7 +9,7 @@ const projects = [
     languages:["C#", "PHP", "JavaScript", "HTML", "CSS", "SQL"],
     tools: ["Unity", "Unity VR", "Online Hosting (Hostinger)", "phpMyAdmin", "Design Thinking", "Trello"],
     description: [
-      {text:"With the motive of my final year project, I developed a solution to the growing issue of physical inactivity, particularly in the youth of the population. The solution designed and developed includes a Virtual Reality (VR) Game and a Web Application, interconnected in between by a Relational Database. Note that this project was focused on functionality and not looks as consisting only in the early steps in the development of the videogame", 
+      {text:"With the motive of my final year project, I developed a solution to the growing issue of physical inactivity, particularly in the youth of the population. The solution designed and developed includes a Virtual Reality (VR) Game and a Web Application, interconnected in between by a Relational Database. Note that this project was focused on functionality and not looks as consisting only in the early steps in the development of the videogame. Besides that, the project was awarded the maximumn grade.", 
         image:""}, 
       {text:"The first step of the project was the realization of the Design Thinking process, in which the idea of the solution was created based on the target users. The solution would take advantage of the increase in popularity of videogames to promote the pursue of a healthier lifestyle. To accomplish such objective a videogame was designed. The game would be a first-person VR game based on exploring and fighting in dungeons. It would include in its gameplay the realization of physical activities, in this case, walking, running and performing anaerobic exercises. Those activities would be directly linked to the game, the first two would be used as an in-game resource and the last one would be linked to the creation of spells to later on cast to fight. The more effort put into the preparation of the spell, the more powerful it would be, giving the player extra motivation to push forward while doing physical exercises.", 
         image:"./portfolio/project_images/Design_thinking.png"},
@@ -35,14 +35,23 @@ const projects = [
   },
   {
     title: "Development of an Asynchronous messaging application similar to \"WhatsAppp\"",
-    brief_summary: "VR Android Game created from scratch where the player has to survive in an infested city of zombies while controlling Artificial Intelligence based turrets",
-    languages:["C#"],
-    tools: ["Unity", "State Machines (AI)", "Trello"],
+    brief_summary: "Final project of \"Computer Architecture\" module. The application uses Client-Server architecture to manage messages between users in an asychronous fashion.",
+    languages:["C++"],
+    tools: ["Scockets connection", "Client-Server architecture", "Multithreading", "Linux"],
     description: [
-      {text:"Videogame developed during my last academic year in a combination of two modules final projects. Project was created in Unity with the use of Android SDK for VR games using Google Cardboard. The development was heavily based on artificial intelligence. Three different Artificial Intelligences were programed from scratch, each one including state machines with their own objectives and unique perception systems. Other Artificial Intelligence algorithms were used like A* for calculating the in-real-time optimal path in a 3D changing map.", 
-        image:"./portfolio/project_images/Zombie_StateMachine.png"}, 
-    ],
-    link: {text:"Link to the GitHub repo", link:"https://github.com/100451218/VR-Android-Videogame"}
+      {text:"Academic project developed in collaboration, consisting of the development of a system interface and client-server architecture communicating in between through sockets. For the project, clients would be able to access through a graphical interface to a program similar to \"WhatsApp\” or \“Telegram\” in which they would be able to read pending messages and have conversations with multiple users at once. The communication with the server was done through socket communication using the language C++. The server managed all the conversations, connections and logs in/off concurrently through multithreading using locks (mutex). The project included the design and implementation of the server's files storage that allowed the fast retrieval of an users messages, this storage was programmed utilizing Linux file instructions", 
+        image:""}, 
+    ]
+  },
+  {
+    title: "Discord Bot third party APIs using Python",
+    brief_summary: "Discord Bot programmed in Python to manage a videogame tournament, including command recognition and third-party APIs call using asynchronous hhtp calls and managing JSON files.",
+    languages:["Python", "JSON"],
+    tools: ["Discord Bot", "Third-party APIs", "HTTP calls"],
+    description: [
+      {text:"This personal project came with the motivation of managing a tournament that I was planning on organizing. The idea was to create a chat bot in the social media platform discord that would allow all participants of the tournament to track their progress and check their statistics. The bot was programmed in Python using text pattern recognition and http calls to the third-party APIs of the videogame the tournament was based on. Even though the tournament did not take place in the end, this project allowed me to learn about third-party APIs calls and JSON data management and destructuring. For some of the commands, there was a data manipulation performed prior to the answer to provide extra data, such as most recent character played or win rate in the last n games.", 
+        image:"./portfolio/project_images/DiscordBot.png"}, 
+    ]
   }
 ];
 

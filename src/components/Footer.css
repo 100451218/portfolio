@@ -1,6 +1,6 @@
 
 .footer{
-    position: sticky;
+    position: fixed;
     bottom: 0;
     width: fill;
     background-color: #333;
@@ -21,4 +21,14 @@
 }
 .social-links a:hover{
     color: #00bcd4;
+}
+
+
+#Phone{
+    right: 10px;
+    position: absolute;
+}
+
+#Phone p {
+    margin: 0;
 }
