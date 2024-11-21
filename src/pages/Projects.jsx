@@ -36,7 +36,7 @@ const projects = [
   {
     title: "Development of an Asynchronous messaging application similar to \"WhatsAppp\"",
     brief_summary: "Final project of \"Computer Architecture\" module. The application uses Client-Server architecture to manage messages between users in an asychronous fashion.",
-    languages:["C++"],
+    languages:["C++", "Python"],
     tools: ["Scockets connection", "Client-Server architecture", "Multithreading", "Linux"],
     description: [
       {text:"Academic project developed in collaboration, consisting of the development of a system interface and client-server architecture communicating in between through sockets. For the project, clients would be able to access through a graphical interface to a program similar to \"WhatsApp\” or \“Telegram\” in which they would be able to read pending messages and have conversations with multiple users at once. The communication with the server was done through socket communication using the language C++. The server managed all the conversations, connections and logs in/off concurrently through multithreading using locks (mutex). The project included the design and implementation of the server's files storage that allowed the fast retrieval of an users messages, this storage was programmed utilizing Linux file instructions", 
